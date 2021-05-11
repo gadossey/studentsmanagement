@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit a student</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div>
+            <label for="id">Student ID: </label>
+            <input type="text" name="sid" id="sid" required>
+          </div>
+        <div>
+            <label for="id">First name: </label>
+            <input type="text" name="fname" id="fname" required>
+          </div>
+          <div>
+            <label for="id">Last name: </label>
+            <input type="text" name="lname" id="lname" required>
+          </div>
+          <div>
+            <label for="id">Programme: </label>
+            <input type="text" name="programme" id="prog" required>
+          </div>
+        <div class="Add">
+          <button type="button" id="edit">Edit student</button>
+        </div>
+      </form>
+    
+      <script>
+      
+
+      var editURL = "http://localhost/STUDENTMANAGEMENT/api/update.php"
+
+    document.getElementById('edit').addEventListener('click', editOne)
+
+    function editOne() {
+        var sid = document.getElementById("sid").value;
+        var fname = document.getElementById("fname").value;
+      var lname = document.getElementById("lname").value;
+      var programme = document.getElementById("prog").value;
+
+        fetch(editURL, {
+                method: 'PUT',
+                body: JSON.stringify({
+                    Student_id: sid,
+                     First_name: fname,
+                     Last_name: lname,
+                     Programme: programme
+                    })
+            });
+
+         document.getElementById("sid").value = '';
+       document.getElementById("fname").value = '';
+       document.getElementById("lname").value = '';
+     document.getElementById("prog").value = '';
+
+    }
+
+      </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete student</title>
+    <link rel="stylesheet" href="style.css">i
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Delete a student</legend>
+            <input type="text" id="enter" />
+            <button id="delete" type="submit">Delete student</button>
+        </fieldset>
+
+    </form>
+    <script>
+        document.getElementById('delete').addEventListener('click', deleteOne);
+        var deleteURL = "http://localhost/STUDENTMANAGEMENT/api/delete.php";
+        function deleteOne() {
+            var value = document.getElementById("enter").value
+            fetch(deleteURL, {
+                method: 'DELETE',
+                body: JSON.stringify({ Student_id: value })
+            });
+
+            document.getElementById("enter").value = ''
+        }
+    </script>
+</body>
+
+</html>
