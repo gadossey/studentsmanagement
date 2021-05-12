@@ -16,9 +16,11 @@ body {
 }
 
 .wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-    align-items: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    min-height: 67px;
+    width: 1452px;
 }
 
 nav {
@@ -33,12 +35,15 @@ nav ul {
 }
 
 nav .logo {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 54px;
-    color: #000000;
+    color: var(--black);
+    font-family: var(--font-family-roboto-bold);
+    font-size: var(--font-size-l);
+    font-weight: 700;
+    letter-spacing: 0;
+    min-height: 42px;
+    min-width: 384px;
+    mix-blend-mode: normal;
+    width: 384px;
 }
 
 .nav-items li {
@@ -47,9 +52,14 @@ nav .logo {
 }
 
 .nav-items li a {
-    color: #000000;
-    font-size: 24px;
-    font-family: Poppins;
+    color: var(--black);
+    font-family: var(--font-family-roboto-regular);
+    font-size: var(--font-size-s);
+    letter-spacing: 0;
+    min-height: 33px;
+    min-width: 97px;
+    mix-blend-mode: normal;
+    width: 97px;
     text-decoration: none;
 }
 
@@ -75,6 +85,7 @@ header .heros-box-left {
     height: 610px;
     left: 22px;
     top: 104px;
+    display: none;
 }
 
 header .hero-box-right h1 {
@@ -91,19 +102,24 @@ header .heros-box-left h1 {
 }
 
 header .hero-image {
-    background: url(images/group-image.png) no-repeat ;
+    background: url(images/group-image.png) no-repeat;
     background-size: contain;
     height: 85vh;
-    width: 500px;
-    left: 610px;
-    top: 160px;
-    position: inherit;
+    align-items: flex-start;
+    display: flex;
+    min-width: 906px;
+}
+
+.form-container {
+    width: 739px;
+    height: 439px;
+    display: flex;
     align-items: center;
-    padding-left: 608px;
-    padding-top: 76px;
-    padding-bottom: 109px;
-    padding-right: 140px;
-    
+}
+
+form id {
+    background: #C4C4C4;
+    border-radius: 32px;
 }
 
 header .hero-profile {
@@ -165,7 +181,7 @@ header a {
 }
 
 .header-container {
-    background:  linear-gradient(110.41deg, #9897D2 -0.59%, #95A1F5 100%),url(images/background-image-1.png);
+    background: linear-gradient(110.41deg, #9897D2 -0.59%, #95A1F5 100%), url(images/background-image-1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
