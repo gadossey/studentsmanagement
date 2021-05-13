@@ -795,7 +795,7 @@ li {
 footer {
     text-align: center;
     background: #302C42;
-    padding: 130px 29%;
+    padding: 0;
     color: #ddd;
     line-height: 22px;
     font-weight: 400;
