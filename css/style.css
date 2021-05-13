@@ -1,7 +1,4 @@
-
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
-
-
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -11,8 +8,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(110.41deg, #9897D2 -0.59%, #95A1F5 100%),url(/img/background-image.png);
-
+    background: linear-gradient(110.41deg, #9897D2 -0.59%, #95A1F5 100%), url(/img/background-image.png);
     color: #787878;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
@@ -64,8 +60,6 @@ a {
     color: #111;
 }
 
-
-
 img {
     width: 100%;
 }
@@ -86,9 +80,9 @@ li {
 /*===================
     button
 ===================*/
+
 .button {
-    background: #00FF38
-    ;
+    background: #00FF38;
     border: 0;
     color: #fff;
     padding: 6px 14px 6px 14px;
@@ -106,8 +100,7 @@ li {
 }
 
 .button-1 {
-    background: #7E9247
-    ;
+    background: #7E9247;
     border: 0;
     color: #fff;
     padding: 6px 14px 6px 14px;
@@ -119,6 +112,7 @@ li {
     margin-top: 20px;
     width: 150px;
 }
+
 .button-1:hover {
     border-radius: 35px;
 }
@@ -126,6 +120,7 @@ li {
 /*===================
     navbar
 ===================*/
+
 .navbar {
     padding: 10px 0 10px 0;
 }
@@ -216,10 +211,39 @@ li {
 /*===================
     home -header intro
 ===================*/
+
 .header-intro {
     background-image: url("../img/bg-hero.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+}
+
+.header-intro .entry .frame {
+    width: 431px;
+    height: 610px;
+    left: 22px;
+    top: 104px;
+    background: linear-gradient(18.97deg, #C4C4C4 6.56%, #F4F5F7 51.57%, #C3B984 85.55%);
+    border-radius: 32px;
+    padding: 0 0 75px 0;
+}
+
+.header-intro .entry .frame span {
+    color: #614CAA;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.header-intro .entry .frame h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    margin: 20px 0;
+}
+
+.header-intro .entry frame img {
+    width: 100%;
 }
 
 .header-intro .entry {
@@ -247,10 +271,11 @@ li {
 /*===================
  add student -header intro
 ===================*/
+
 .student-intro {
     background-image: url("../img/background-image-1.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .student-intro .entry {
@@ -278,6 +303,7 @@ li {
 /*===================
     header pages
 ===================*/
+
 .header-pages .pages-title {
     text-align: center;
     padding-top: 70px;
@@ -304,6 +330,7 @@ li {
 /*===================
     title section
 ===================*/
+
 .title-section {
     text-align: center;
     padding-bottom: 40px;
@@ -327,6 +354,7 @@ li {
 /*===================
     services
 ===================*/
+
 .services {
     background-image: url("../img/bg.png");
     background-position: top left;
@@ -367,6 +395,7 @@ li {
 /*===================
     about us
 ===================*/
+
 .about-us {
     background-image: url("../img/bg-about-us.png");
     background-position: top right;
@@ -401,6 +430,7 @@ li {
 /*===================
     counter
 ===================*/
+
 .counter {
     text-align: center;
 }
@@ -436,6 +466,7 @@ li {
 /*===================
     pricing
 ===================*/
+
 .pricing {
     background-image: url("../img/bg2.png");
     background-position: top right;
@@ -498,6 +529,7 @@ li {
 /*===================
     why us
 ===================*/
+
 .why-us {
     background-image: url("../img/bg.png");
     background-repeat: no-repeat;
@@ -534,6 +566,7 @@ li {
 /*===================
     our work
 ===================*/
+
 .our-work {
     background-image: url("../img/bg2.png");
     background-position: bottom left;
@@ -554,19 +587,18 @@ li {
     padding: 17px;
     opacity: 0.9;
 }
+
 /*===================
     Delete Syudent 
 ===================*/
 
 form input[type=text] {
-    padding:10px;
-    border-radius:10px;
-    margin:10px 0; // add top and bottom margin
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
-    width:100%;
-
-
-  }
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0; // add top and bottom margin
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    width: 100%;
+}
 
 /*===================
     testimonial
@@ -654,6 +686,7 @@ form input[type=text] {
 /*===================
     call action
 ===================*/
+
 .call-action {
     padding: 30px 0 130px 0;
     text-align: center;
@@ -670,6 +703,7 @@ form input[type=text] {
 /*===================
     features
 ===================*/
+
 .features {
     padding: 0 0 130px 0;
 }
@@ -739,6 +773,7 @@ form input[type=text] {
 /*===================
     faq
 ===================*/
+
 .faq {
     padding-bottom: 120px;
 }
@@ -755,6 +790,7 @@ form input[type=text] {
 /*===================
     404
 ===================*/
+
 .page404 {
     text-align: center;
     padding-bottom: 130px;
@@ -776,6 +812,7 @@ form input[type=text] {
 /*===================
     Contact us
 ===================*/
+
 .contact-us {
     padding-bottom: 130px;
 }
@@ -806,6 +843,7 @@ form input[type=text] {
 /*===================
     footer
 ===================*/
+
 footer {
     text-align: center;
     background: #302C42;
@@ -871,16 +909,14 @@ footer ul li a .fa-whatsapp {
 /*===================
     responsive
 ===================*/
+
 @media (max-width:767px) {
     .navbar-brand {
         margin-left: 15px;
     }
-
     .header-intro .entry-img {
         padding-top: 0;
     }
-
-
     .navbar .nav-item .dropdown-menu {
         display: none;
         opacity: 0;
@@ -895,7 +931,6 @@ footer ul li a .fa-whatsapp {
         margin-top: 10px;
         margin-left: 20px;
     }
-
     .navbar .nav-item:hover .dropdown-menu {
         opacity: 1;
         visibility: visible;
@@ -903,70 +938,54 @@ footer ul li a .fa-whatsapp {
         transform: rotateX(0deg);
         display: block;
     }
-
     .services .entry {
         margin: 0;
     }
-
     .about-us .entry img {
         padding-right: 0;
         padding-bottom: 55px;
     }
-
     .counter .entry {
         padding: 10px 0;
         margin-bottom: 30px;
     }
-
     .counter .col-md-4:last-child .entry {
         margin-bottom: 0;
     }
-
-
     .pricing .entry {
         margin-bottom: 30px;
         margin-left: 0;
         margin-right: 0;
     }
-
     .pricing .col-md-4:last-child .entry {
         margin-bottom: 0;
     }
-
     footer {
         padding: 130px 0;
     }
-
     .call-action p {
         padding: 0;
     }
-
     .page404 {
         text-align: center;
         padding-bottom: 130px;
     }
-
     .page404 img {
         width: 100%;
     }
-
     .page404 h2 {
         margin-bottom: 20px;
         margin-top: 40px;
     }
-
     .page404 p {
         padding: 0;
     }
-
     .our-mission .entry img {
         padding-left: 0;
     }
-
     .why-us .entry {
         margin: 0;
     }
-
 }
 
 @media (max-width:575px) {
@@ -976,9 +995,7 @@ footer ul li a .fa-whatsapp {
         padding-right: 30px !important;
         margin-left: auto;
         margin-right: auto;
-
     }
-
     .counter .container {
         width: 100%;
         padding-left: 0 !important;
@@ -986,34 +1003,26 @@ footer ul li a .fa-whatsapp {
         margin-left: auto;
         margin-right: auto;
     }
-
     .navbar-brand {
         margin-left: 0;
     }
-
     .navbar-toggler {
         padding-right: 0;
     }
-
     .navbar .nav-link {
         padding-left: 2px !important;
     }
-
-     .navbar .nav-item .dropdown-menu {
-       margin-left: 0;
+    .navbar .nav-item .dropdown-menu {
+        margin-left: 0;
     }
-
     .counter {
         padding: 0 30px;
     }
-
     .services .entry {
         margin: 0;
     }
-
     .pricing .entry {
         margin-left: 0;
         margin-right: 0;
     }
-
 }
