@@ -554,10 +554,20 @@ li {
     padding: 17px;
     opacity: 0.9;
 }
+/*===================
+    Delete Syudent 
+===================*/
+.input {
+    background: #FFFFFF;
+
+padding:10px;
+  border-radius:10px;
+}
 
 /*===================
     testimonial
 ===================*/
+
 .testimonial {
     background-image: url("../img/bg.png");
     background-position: top left;
