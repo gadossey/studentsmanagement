@@ -64,7 +64,58 @@
 
 					<div class="col-md-6 col-sm-12">
 						<div class="entry entry-img" data-aos="zoom-in">
-							<img src="img/group-image.png" alt="">
+							<div class="hero-right">
+								<h1>
+									ADD NEW STUDENT
+								</h1>
+								<form>
+									<div>
+									  <label for="id">First name: </label>
+									  <input type="text" name="fname" id="fname" required>
+									</div>
+									<div>
+									  <label for="id">Last name: </label>
+									  <input type="text" name="lname" id="lname" required>
+									</div>
+									<div>
+									  <label for="id">Programme: </label>
+									  <input type="text" name="programme" id="prog" required>
+									</div>
+									<div class="Add">
+									  <button type="button" id="add">Add student</button>
+									</div>
+								  </form>
+								
+								  <script>
+								
+								
+									var addURL = "http://localhost/STUDENTMANAGEMENT/api/create.php"
+								
+									document.getElementById('add').addEventListener('click', addOne)
+								
+									function addOne() {
+									  var fname = document.getElementById("fname").value
+									  var lname = document.getElementById("lname").value
+									  var programme = document.getElementById("prog").value
+								
+									  fetch(addURL, {
+										method: 'POST',
+										body: JSON.stringify({
+										  First_name: fname,
+										  Last_name: lname,
+										  Programme: programme
+										})
+									  });
+									  document.getElementById("fname").value = '';
+									  document.getElementById("lname").value = '';
+									  document.getElementById("prog").value = '';
+								
+									}
+								
+								  </script>
+							</div>
+							
+
 						</div>
 					</div>
 					
