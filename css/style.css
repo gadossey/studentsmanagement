@@ -275,7 +275,7 @@ li {
 .student-intro {
     background-image: url("../img/background-image-1.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .student-intro .entry {
